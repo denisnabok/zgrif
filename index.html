@@ -47,7 +47,7 @@
     <!-- Header -->
     <header id="main-header" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md py-4 shadow-sm transition-all">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3">
                 <div class="bg-yellow-600 p-2 rounded-lg text-white">
                     <i data-lucide="feather" class="w-6 h-6"></i>
                 </div>
@@ -58,9 +58,9 @@
             </a>
 
             <nav class="hidden lg:flex items-center space-x-8 font-bold text-gray-700">
-                <a href="#services" class="hover:text-yellow-600 transition">Услуги</a>
-                <a href="#prices" class="hover:text-yellow-600 transition">Цены</a>
-                <a href="#languages" class="hover:text-yellow-600 transition">Языки</a>
+                <a href="index.html#services" class="hover:text-yellow-600 transition">Услуги</a>
+                <a href="index.html#prices" class="hover:text-yellow-600 transition">Цены</a>
+                <a href="index.html#languages" class="hover:text-yellow-600 transition">Языки</a>
                 <a href="#contacts" class="hover:text-yellow-600 transition">Контакты</a>
                 <a href="#contacts" class="bg-yellow-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-yellow-700 transition text-sm uppercase tracking-wider">Заказать</a>
             </nav>
@@ -75,9 +75,9 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 hidden lg:hidden">
         <nav class="flex flex-col space-y-6">
-            <a href="#services" class="mobile-link text-2xl font-forum border-b pb-2">Услуги</a>
-            <a href="#prices" class="mobile-link text-2xl font-forum border-b pb-2">Цены</a>
-            <a href="#languages" class="mobile-link text-2xl font-forum border-b pb-2">Языки</a>
+            <a href="index.html#services" class="mobile-link text-2xl font-forum border-b pb-2">Услуги</a>
+            <a href="index.html#prices" class="mobile-link text-2xl font-forum border-b pb-2">Цены</a>
+            <a href="index.html#languages" class="mobile-link text-2xl font-forum border-b pb-2">Языки</a>
             <a href="#contacts" class="mobile-link text-2xl font-forum border-b pb-2">Контакты</a>
         </nav>
     </div>
@@ -99,146 +99,109 @@
     </section>
 
     <!-- Advantages -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 group hover:shadow-xl transition-all">
-                <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
-                    <i data-lucide="clock"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Сроки и объемы</h3>
-                <p class="text-gray-600 text-sm">Переводим документы любого объема. Срочные заказы день в день.</p>
+    <section class="py-16 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <p class="text-4xl font-bold text-gray-900 mb-1">18+</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Лет на рынке</p>
             </div>
-            <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 group hover:shadow-xl transition-all">
-                <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
-                    <i data-lucide="shield-check"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Качество ГОСТ</h3>
-                <p class="text-gray-600 text-sm">Соблюдаем международные стандарты. Бессрочная гарантия на перевод.</p>
+            <div class="border-x border-gray-100">
+                <p class="text-4xl font-bold text-gray-900 mb-1">50+</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Языков мира</p>
             </div>
-            <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 group hover:shadow-xl transition-all">
-                <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
-                    <i data-lucide="lock"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Конфиденциально</h3>
-                <p class="text-gray-600 text-sm">Заключаем официальный договор о неразглашении данных.</p>
+            <div>
+                <p class="text-4xl font-bold text-gray-900 mb-1">∞</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Гарантия</p>
             </div>
         </div>
     </section>
 
-    <!-- Services -->
+    <!-- Services Grid -->
     <section id="services" class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-16 font-playfair">Основные направления</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all">
-                    <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="file-text"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Письменный перевод</h3>
-                    <p class="text-gray-500 mb-6 text-sm italic">Технический, юридический, медицинский и перевод личных документов.</p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-widest">
-                        <li>• Инструкции и чертежи</li>
-                        <li>• Контракты и уставы</li>
-                        <li>• Выписки и справки</li>
-                    </ul>
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Наши Услуги</h2>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto">Полный спектр лингвистических услуг для частных лиц и бизнеса.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Item 1 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all group">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-all">
+                    <i data-lucide="file-text" class="w-7 h-7"></i>
                 </div>
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all">
-                    <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="stamp"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Заверение</h3>
-                    <p class="text-gray-500 mb-6 text-sm italic">Нотариальный перевод, заверение печатью бюро переводов.</p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-widest">
-                        <li>• Нотариальное заверение</li>
-                        <li>• Печать бюро</li>
-                        <li>• Копии документов</li>
-                    </ul>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">Письменный перевод</h3>
+                <p class="text-gray-500 mb-6 text-sm">Перевод технической, юридической, медицинской документации и личных документов.</p>
+                <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-wider">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Техника и IT</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Юриспруденция</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Медицина</li>
+                </ul>
+            </div>
+            <!-- Item 2 (Linking to the new page) -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="window.location.href='notary.html'">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-all">
+                    <i data-lucide="stamp" class="w-7 h-7"></i>
                 </div>
-                <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all">
-                    <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6"><i data-lucide="globe-2"></i></div>
-                    <h3 class="text-2xl font-bold mb-4">Апостиль</h3>
-                    <p class="text-gray-500 mb-6 text-sm italic">Легализация документов для использования за границей.</p>
-                    <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-widest">
-                        <li>• Штамп Апостиль</li>
-                        <li>• Минюст и МИД РФ</li>
-                        <li>• Легализация ТПП</li>
-                    </ul>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900 underline decoration-yellow-500/30">Нотариальное заверение</h3>
+                <p class="text-gray-500 mb-6 text-sm">Официальное подтверждение подлинности подписи переводчика у нотариуса.</p>
+                <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-wider mb-6">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Нотариус</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Печать бюро</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Срочно</li>
+                </ul>
+                <a href="notary.html" class="text-yellow-600 font-bold text-xs uppercase tracking-widest flex items-center group-hover:translate-x-2 transition-transform">Подробнее <i data-lucide="arrow-right" class="ml-2 w-3 h-3"></i></a>
+            </div>
+            <!-- Item 3 -->
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all group">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-all">
+                    <i data-lucide="globe-2" class="w-7 h-7"></i>
                 </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">Апостиль</h3>
+                <p class="text-gray-500 mb-6 text-sm">Проставление штампа «Апостиль» и полная консульская легализация документов.</p>
+                <ul class="space-y-2 text-xs font-bold text-gray-700 uppercase tracking-wider">
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Минюст</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> МИД и МВД</li>
+                    <li class="flex items-center"><span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-2"></span> Посольства</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Prices -->
+    <!-- Prices Section -->
     <section id="prices" class="py-24 bg-white">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12 font-playfair tracking-tight">Стоимость услуг</h2>
-            <div class="overflow-hidden rounded-2xl border border-gray-100 shadow-xl">
-                <table class="w-full text-left">
-                    <thead class="bg-gray-900 text-white uppercase text-[10px] tracking-widest">
-                        <tr>
-                            <th class="p-5">Направление</th>
-                            <th class="p-5">Единица</th>
-                            <th class="p-5 text-right">Цена от</th>
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Стоимость услуг</h2>
+            <div class="overflow-x-auto shadow-xl rounded-2xl border border-gray-100">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-900 text-white uppercase text-[10px] tracking-widest font-bold">
+                            <th class="p-6">Вид услуги</th>
+                            <th class="p-6">Единица</th>
+                            <th class="p-6">Цена от</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-gray-100">
-                        <tr class="hover:bg-gray-50 transition"><td class="p-5 font-bold">Английский язык</td><td class="p-5 text-sm text-gray-400">1800 знаков</td><td class="p-5 text-right font-bold text-yellow-700">550 ₽</td></tr>
-                        <tr class="hover:bg-gray-50 transition"><td class="p-5 font-bold">Немецкий, Французский</td><td class="p-5 text-sm text-gray-400">1800 знаков</td><td class="p-5 text-right font-bold text-yellow-700">650 ₽</td></tr>
-                        <tr class="hover:bg-gray-50 transition"><td class="p-5 font-bold">Китайский, Японский</td><td class="p-5 text-sm text-gray-400">1800 знаков</td><td class="p-5 text-right font-bold text-yellow-700">1200 ₽</td></tr>
-                        <tr class="hover:bg-gray-50 transition"><td class="p-5 font-bold">Перевод паспорта</td><td class="p-5 text-sm text-gray-400">1 документ</td><td class="p-5 text-right font-bold text-yellow-700">1200 ₽</td></tr>
-                        <tr class="hover:bg-gray-50 transition"><td class="p-5 font-bold">Заверение нотариусом</td><td class="p-5 text-sm text-gray-400">1 подпись</td><td class="p-5 text-right font-bold text-yellow-700">700 ₽</td></tr>
+                        <tr class="hover:bg-gray-50 transition"><td class="p-6 font-bold">Английский язык</td><td class="p-6 text-sm text-gray-500">1800 знаков</td><td class="p-6 font-bold text-yellow-700">550 ₽</td></tr>
+                        <tr class="hover:bg-gray-50 transition"><td class="p-6 font-bold">Немецкий, Французский</td><td class="p-6 text-sm text-gray-500">1800 знаков</td><td class="p-6 font-bold text-yellow-700">650 ₽</td></tr>
+                        <tr class="hover:bg-gray-50 transition"><td class="p-6 font-bold">Китайский, Японский</td><td class="p-6 text-sm text-gray-500">1800 знаков</td><td class="p-6 font-bold text-yellow-700">1200 ₽</td></tr>
+                        <tr class="hover:bg-gray-50 transition"><td class="p-6 font-bold">Перевод паспорта</td><td class="p-6 text-sm text-gray-500">1 документ</td><td class="p-6 font-bold text-yellow-700">1200 ₽</td></tr>
+                        <tr class="hover:bg-gray-50 transition"><td class="p-6 font-bold">Нотариальное заверение</td><td class="p-6 text-sm text-gray-500">1 подпись</td><td class="p-6 font-bold text-yellow-700">900 ₽</td></tr>
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
 
-    <!-- Languages -->
+    <!-- Languages Section -->
     <section id="languages" class="py-24 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 uppercase tracking-widest font-playfair">Языки перевода</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇬🇧</span> <span class="font-bold text-sm">Английский</span>
-                </div>
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇩🇪</span> <span class="font-bold text-sm">Немецкий</span>
-                </div>
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇫🇷</span> <span class="font-bold text-sm">Французский</span>
-                </div>
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇮🇹</span> <span class="font-bold text-sm">Итальянский</span>
-                </div>
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇪🇸</span> <span class="font-bold text-sm">Испанский</span>
-                </div>
-                <div class="p-4 bg-white rounded-xl shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:border-yellow-200 transition-all">
-                    <span class="text-2xl">🇨🇳</span> <span class="font-bold text-sm">Китайский</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="py-24 bg-white">
-        <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 font-playfair uppercase tracking-widest">Вопросы и ответы</h2>
-            <div class="space-y-4">
-                <div class="border rounded-2xl overflow-hidden">
-                    <button class="w-full p-6 text-left font-bold flex justify-between items-center faq-btn">
-                        Как заказать перевод онлайн?
-                        <i data-lucide="plus" class="text-yellow-600 transition-transform"></i>
-                    </button>
-                    <div class="max-h-0 overflow-hidden bg-gray-50 faq-body transition-all duration-300">
-                        <p class="p-6 text-gray-600 text-sm">Просто отправьте скан или фото документа на почту info@zgrif.ru или в WhatsApp. Мы оценим стоимость в течение 15 минут.</p>
-                    </div>
-                </div>
-                <div class="border rounded-2xl overflow-hidden">
-                    <button class="w-full p-6 text-left font-bold flex justify-between items-center faq-btn">
-                        Делаете ли вы срочный перевод паспорта?
-                        <i data-lucide="plus" class="text-yellow-600 transition-transform"></i>
-                    </button>
-                    <div class="max-h-0 overflow-hidden bg-gray-50 faq-body transition-all duration-300">
-                        <p class="p-6 text-gray-600 text-sm">Да, срочный перевод паспорта с нотариальным заверением занимает от 1 до 2 часов.</p>
-                    </div>
-                </div>
+            <h2 class="text-3xl font-bold text-center mb-16 font-playfair uppercase tracking-widest">Языки перевода</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 text-center">
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇬🇧</span><span class="font-bold text-sm">Английский</span></div>
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇩🇪</span><span class="font-bold text-sm">Немецкий</span></div>
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇫🇷</span><span class="font-bold text-sm">Французский</span></div>
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇮🇹</span><span class="font-bold text-sm">Итальянский</span></div>
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇪🇸</span><span class="font-bold text-sm">Испанский</span></div>
+                <div class="p-4 bg-white rounded-2xl shadow-sm border border-gray-100"><span class="block text-3xl mb-2">🇨🇳</span><span class="font-bold text-sm">Китайский</span></div>
             </div>
         </div>
     </section>
@@ -247,12 +210,12 @@
     <section id="contacts" class="py-24 bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
-                <h2 class="text-4xl font-bold mb-8 font-playfair">Контакты</h2>
+                <h2 class="text-4xl font-bold mb-12 font-playfair">Контакты</h2>
                 <div class="space-y-8">
                     <div class="flex items-start">
                         <div class="bg-yellow-600 p-3 rounded-lg mr-6 text-white"><i data-lucide="map-pin"></i></div>
                         <div>
-                            <p class="font-bold text-lg mb-1">Офис в Москве</p>
+                            <p class="font-bold text-xl mb-1">Офис в Москве</p>
                             <p class="text-gray-400">Головинское ш., д. 1, БЦ «Охотник», офис 315</p>
                             <p class="text-yellow-500 font-bold text-xs mt-2 uppercase tracking-widest">м. Водный стадион (1 мин.)</p>
                         </div>
@@ -260,15 +223,8 @@
                     <div class="flex items-start">
                         <div class="bg-yellow-600 p-3 rounded-lg mr-6 text-white"><i data-lucide="phone"></i></div>
                         <div>
-                            <p class="font-bold text-lg mb-1">Телефон</p>
+                            <p class="font-bold text-xl mb-1">Телефон</p>
                             <a href="tel:+79255857479" class="text-gray-400 hover:text-white transition">+7 (925) 585-74-79</a>
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-yellow-600 p-3 rounded-lg mr-6 text-white"><i data-lucide="mail"></i></div>
-                        <div>
-                            <p class="font-bold text-lg mb-1">E-mail</p>
-                            <a href="mailto:info@zgrif.ru" class="text-gray-400 hover:text-white transition">info@zgrif.ru</a>
                         </div>
                     </div>
                 </div>
@@ -289,7 +245,7 @@
         <p class="text-[10px]">© 2005–2025 Бюро переводов. Все права защищены.</p>
     </footer>
 
-    <!-- Lucide Icons Scripts -->
+    <!-- Scripts -->
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <script src="script.js"></script>
 </body>

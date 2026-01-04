@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотариальный перевод - Золотой Гриф | Москва</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Forum&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 scroll-smooth">
+
+    <!-- Top Bar -->
+    <div class="hidden lg:block bg-[#1a1a1a] text-white py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs tracking-wider uppercase font-bold">
+            <div class="flex items-center space-x-6">
+                <a href="tel:+79255857479" class="flex items-center hover:text-yellow-500 transition">
+                    <i data-lucide="phone" class="w-3.5 h-3.5 mr-2"></i> +7 (925) 585-74-79
+                </a>
+                <a href="mailto:info@zgrif.ru" class="flex items-center hover:text-yellow-500 transition">
+                    <i data-lucide="mail" class="w-3.5 h-3.5 mr-2"></i> info@zgrif.ru
+                </a>
+            </div>
+            <div class="flex items-center space-x-4 text-gray-400">
+                <span><i data-lucide="clock" class="inline w-3.5 h-3.5 mr-1"></i> ПН-ПТ 10:00 - 19:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md py-4 shadow-sm transition-all">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-yellow-600 p-2 rounded-lg text-white">
+                    <i data-lucide="feather" class="w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col leading-none">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900 uppercase">Золотой Гриф</span>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-yellow-700 font-bold">Бюро переводов с 2005 года</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8 font-bold text-gray-700">
+                <a href="index.html" class="hover:text-yellow-600 transition">Главная</a>
+                <a href="index.html#services" class="hover:text-yellow-600 transition font-bold text-yellow-600">Услуги</a>
+                <a href="#contacts" class="bg-yellow-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-yellow-700 transition text-sm uppercase tracking-wider">Заказать</a>
+            </nav>
+
+            <button id="menu-toggle" class="lg:hidden p-2 text-gray-700">
+                <i data-lucide="menu" id="menu-icon-open"></i>
+                <i data-lucide="x" id="menu-icon-close" class="hidden"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 hidden lg:hidden">
+        <nav class="flex flex-col space-y-6">
+            <a href="index.html" class="mobile-link text-2xl font-forum border-b pb-2">Главная</a>
+            <a href="index.html#services" class="mobile-link text-2xl font-forum border-b pb-2">Услуги</a>
+            <a href="#contacts" class="mobile-link text-2xl font-forum border-b pb-2">Контакты</a>
+        </nav>
+    </div>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 py-4 text-xs font-bold uppercase tracking-widest text-gray-400">
+            <a href="index.html" class="hover:text-yellow-600">Главная</a>
+            <span class="mx-2">•</span>
+            <span class="text-gray-900">Нотариальный перевод</span>
+        </div>
+    </div>
+
+    <!-- Main Content Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
+            
+            <!-- Left Side Content -->
+            <div class="lg:w-2/3">
+                <h1 class="text-4xl md:text-5xl font-bold mb-10 font-playfair tracking-tight">Нотариальное заверение перевода</h1>
+                
+                <div class="prose prose-lg text-gray-600 max-w-none space-y-6 leading-relaxed">
+                    <p>
+                        Трансграничные перемещения связаны с большим количеством формальных процедур. Существует несколько форм подтверждения легитимности перевода – легализация, заверение печатью бюро. Но <strong>нотариальное заверение перевода</strong> остаётся самой востребованной услугой как у юридических, так и у физических лиц.
+                    </p>
+
+                    <div class="bg-yellow-50 border-l-4 border-yellow-600 p-8 my-10 rounded-r-2xl">
+                        <p class="font-bold text-gray-900 mb-2 italic">Определение:</p>
+                        <p class="text-sm">Нотариальное заверение перевода в нашей стране – это письменное подтверждение нотариусом подлинности подписи известного ему переводчика на переводе документа.</p>
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-gray-900 pt-6">Как получить перевод с заверением?</h3>
+                    <ul class="space-y-4 list-none">
+                        <li class="flex items-start">
+                            <span class="bg-yellow-600 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 mr-4 text-xs font-bold">1</span>
+                            <span>Заказчик предоставляет документ (оригинал или нотариально заверенную копию).</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-600 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 mr-4 text-xs font-bold">2</span>
+                            <span>Выполняется перевод дипломированным специалистом.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-600 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 mr-4 text-xs font-bold">3</span>
+                            <span>Оригинал и перевод сшиваются вместе специальным образом.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="bg-yellow-600 text-white w-6 h-6 rounded-full flex items-center justify-center shrink-0 mr-4 text-xs font-bold">4</span>
+                            <span>Нотариус свидетельствует подлинность подписи переводчика в реестре.</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold text-gray-900 pt-10">Когда требуется нотариальный перевод?</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Вид на жительство (ВНЖ)</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Разрешение на работу</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Учёба за границей</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Регистрация брака</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Наследственные дела</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm font-bold bg-gray-50 p-4 rounded-xl">
+                            <i data-lucide="check-circle" class="text-yellow-600 w-5 h-5"></i>
+                            <span>Трудовой стаж</span>
+                        </div>
+                    </div>
+
+                    <h2 class="text-3xl font-bold text-gray-900 pt-12 mb-6">Цены на услуги</h2>
+                    <div class="overflow-hidden rounded-2xl border border-gray-100 shadow-lg">
+                        <table class="w-full text-left">
+                            <thead class="bg-gray-900 text-white uppercase text-[10px] tracking-widest font-bold">
+                                <tr>
+                                    <th class="p-6">Наименование услуги</th>
+                                    <th class="p-6">Срок</th>
+                                    <th class="p-6 text-right">Цена</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-100">
+                                <tr><td class="p-6 font-bold">Нотариальное заверение</td><td class="p-6 text-gray-400 text-sm">1 день</td><td class="p-6 text-right font-bold text-yellow-700">900 ₽</td></tr>
+                                <tr><td class="p-6 font-bold">Срочное заверение</td><td class="p-6 text-gray-400 text-sm">от 3 часов</td><td class="p-6 text-right font-bold text-yellow-700">1500 ₽</td></tr>
+                                <tr><td class="p-6 font-bold">Заверение копии (1 стр.)</td><td class="p-6 text-gray-400 text-sm">1 день</td><td class="p-6 text-right font-bold text-yellow-700">100 ₽</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:w-1/3">
+                <div class="sticky top-28 space-y-8">
+                    <div class="bg-gray-900 text-white p-10 rounded-3xl shadow-2xl">
+                        <h3 class="text-xl font-bold mb-6 font-playfair">Заказать расчет</h3>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Имя" class="w-full bg-white/10 border border-white/20 p-4 rounded-xl outline-none focus:border-yellow-600">
+                            <input type="tel" placeholder="Телефон" class="w-full bg-white/10 border border-white/20 p-4 rounded-xl outline-none focus:border-yellow-600">
+                            <button class="w-full bg-yellow-600 py-4 rounded-xl font-bold uppercase tracking-widest hover:bg-yellow-700 transition">Жду звонка</button>
+                        </form>
+                    </div>
+
+                    <div class="p-8 border border-gray-100 rounded-3xl bg-gray-50">
+                        <h3 class="font-bold mb-4 uppercase tracking-widest text-xs text-gray-400">Другие услуги</h3>
+                        <ul class="space-y-3 font-bold text-sm">
+                            <li><a href="#" class="hover:text-yellow-600 flex items-center transition"><i data-lucide="arrow-right" class="w-3 h-3 mr-2 text-yellow-600"></i> Апостиль и Легализация</a></li>
+                            <li><a href="#" class="hover:text-yellow-600 flex items-center transition"><i data-lucide="arrow-right" class="w-3 h-3 mr-2 text-yellow-600"></i> Устный перевод</a></li>
+                            <li><a href="#" class="hover:text-yellow-600 flex items-center transition"><i data-lucide="arrow-right" class="w-3 h-3 mr-2 text-yellow-600"></i> Медицинский перевод</a></li>
+                            <li><a href="#" class="hover:text-yellow-600 flex items-center transition"><i data-lucide="arrow-right" class="w-3 h-3 mr-2 text-yellow-600"></i> Технический перевод</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Example Blocks -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12 font-playfair">Примеры оформления</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-4 rounded-2xl shadow-md">
+                    <img src="https://zgrif.ru/wp-content/uploads/2022/02/nzp-rus-222-1.png" alt="Пример 1" class="rounded-xl w-full">
+                    <p class="mt-4 text-xs font-bold uppercase tracking-widest text-gray-500">Заверение на русском языке</p>
+                </div>
+                <div class="bg-white p-4 rounded-2xl shadow-md">
+                    <img src="https://zgrif.ru/wp-content/uploads/2022/02/nzpreal_eng-1.png" alt="Пример 2" class="rounded-xl w-full">
+                    <p class="mt-4 text-xs font-bold uppercase tracking-widest text-gray-500">Заверение с дублированием на английском</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#0a0a0a] text-gray-600 py-10 text-center border-t border-white/5">
+        <p class="text-xs uppercase tracking-widest mb-2 font-bold text-gray-400">Золотой Гриф</p>
+        <p class="text-[10px]">© 2005–2025 Бюро переводов. Все права защищены.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
