@@ -1,18 +1,26 @@
 
+/* Базовые настройки шрифтов */
 body {
     font-family: 'PT Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
+/* Стилизация заголовков */
 h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
 }
 
 .font-forum {
     font-family: 'Forum', serif;
 }
 
-/* FAQ transitions */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* FAQ анимация */
 .faq-body {
     transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -21,7 +29,7 @@ h1, h2, h3, h4 {
     transition: transform 0.3s ease;
 }
 
-/* Custom Scrollbar */
+/* Скроллбар */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -33,12 +41,16 @@ h1, h2, h3, h4 {
     border-radius: 10px;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Плавное появление секций */
+section {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 0.8s ease-out forwards;
 }
 
-section {
-    animation: fadeIn 0.8s ease-out forwards;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
