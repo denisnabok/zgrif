@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Золотой Гриф | Бюро переводов в Москве</title>
+    <title>Золотой Гриф | Профессиональное бюро переводов в Москве</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;700&family=Forum&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 <script type="importmap">
 {
@@ -20,40 +19,57 @@
 }
 </script>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800 scroll-smooth">
 
-    <!-- Top Bar -->
-    <div class="hidden lg:block bg-[#1a1a1a] text-white py-2 px-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center text-sm">
+    <!-- Top Navigation Bar -->
+    <div class="hidden lg:block bg-[#1a1a1a] text-white py-2 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center text-xs tracking-wider uppercase font-bold">
             <div class="flex items-center space-x-6">
                 <a href="tel:+79255857479" class="flex items-center hover:text-yellow-500 transition">
-                    <i data-lucide="phone" class="w-4 h-4 mr-2"></i> +7 (925) 585-74-79
+                    <i data-lucide="phone" class="w-3.5 h-3.5 mr-2"></i> +7 (925) 585-74-79
+                </a>
+                <a href="https://wa.me/79255857479" class="flex items-center hover:text-green-400 transition">
+                    <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-2"></i> WhatsApp
                 </a>
                 <a href="mailto:info@zgrif.ru" class="flex items-center hover:text-yellow-500 transition">
-                    <i data-lucide="mail" class="w-4 h-4 mr-2"></i> info@zgrif.ru
+                    <i data-lucide="mail" class="w-3.5 h-3.5 mr-2"></i> info@zgrif.ru
                 </a>
             </div>
-            <div class="text-gray-300">
-                Москва, Головинское ш., д. 1 | ПН-ПТ 10:00 - 19:00
+            <div class="flex items-center space-x-4 text-gray-400">
+                <span><i data-lucide="clock" class="inline w-3.5 h-3.5 mr-1"></i> ПН-ПТ 10:00 - 19:00</span>
+                <span><i data-lucide="map-pin" class="inline w-3.5 h-3.5 mr-1"></i> м. Водный стадион</span>
             </div>
         </div>
     </div>
 
-    <!-- Header -->
-    <header id="main-header" class="sticky top-0 z-50 w-full bg-white transition-all duration-300 py-4 shadow-sm">
+    <!-- Main Header -->
+    <header id="main-header" class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur-md transition-all duration-300 py-4 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-            <div class="flex flex-col">
-                <span class="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight leading-none">ЗОЛОТОЙ ГРИФ</span>
-                <span class="text-[10px] md:text-xs uppercase tracking-[0.2em] text-yellow-600 font-bold">Бюро переводов с 2005 года</span>
-            </div>
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="bg-yellow-600 p-2 rounded-lg group-hover:bg-yellow-700 transition">
+                    <i data-lucide="feather" class="text-white w-6 h-6"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-xl md:text-2xl font-bold text-gray-900 tracking-tighter leading-none">ЗОЛОТОЙ ГРИФ</span>
+                    <span class="text-[9px] uppercase tracking-[0.2em] text-yellow-700 font-bold">Translation Bureau since 2005</span>
+                </div>
+            </a>
 
             <nav class="hidden lg:flex items-center space-x-8">
-                <a href="#services" class="font-bold text-gray-700 hover:text-yellow-600 transition">Услуги</a>
+                <div class="relative group">
+                    <button class="font-bold text-gray-700 group-hover:text-yellow-600 transition flex items-center">Услуги <i data-lucide="chevron-down" class="w-4 h-4 ml-1"></i></button>
+                    <div class="absolute left-0 mt-2 w-64 bg-white shadow-2xl rounded-xl p-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100">
+                        <a href="#services" class="block p-2 hover:bg-gray-50 rounded text-sm font-bold">Письменный перевод</a>
+                        <a href="#services" class="block p-2 hover:bg-gray-50 rounded text-sm font-bold">Нотариальное заверение</a>
+                        <a href="#services" class="block p-2 hover:bg-gray-50 rounded text-sm font-bold">Апостиль и Легализация</a>
+                        <a href="#services" class="block p-2 hover:bg-gray-50 rounded text-sm font-bold">Устный перевод</a>
+                    </div>
+                </div>
+                <a href="#prices" class="font-bold text-gray-700 hover:text-yellow-600 transition">Цены</a>
                 <a href="#languages" class="font-bold text-gray-700 hover:text-yellow-600 transition">Языки</a>
-                <a href="#reviews" class="font-bold text-gray-700 hover:text-yellow-600 transition">Отзывы</a>
-                <a href="#contacts" class="font-bold text-gray-700 hover:text-yellow-600 transition">Контакты</a>
-                <button class="bg-yellow-600 text-white px-6 py-2.5 rounded shadow-lg hover:bg-yellow-700 transition font-bold text-sm uppercase tracking-wider">
-                    Заказать перевод
+                <a href="#workflow" class="font-bold text-gray-700 hover:text-yellow-600 transition">Процесс</a>
+                <button class="bg-yellow-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-yellow-700 transition font-bold text-sm uppercase tracking-wider">
+                    Сделать заказ
                 </button>
             </nav>
 
@@ -64,117 +80,253 @@
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 hidden lg:hidden">
-        <nav class="flex flex-col space-y-6 text-xl">
-            <a href="#services" class="mobile-link border-b pb-2 font-forum">Услуги</a>
-            <a href="#languages" class="mobile-link border-b pb-2 font-forum">Языки перевода</a>
-            <a href="#reviews" class="mobile-link border-b pb-2 font-forum">Отзывы</a>
-            <a href="#contacts" class="mobile-link border-b pb-2 font-forum">Контакты</a>
-            <button class="w-full bg-yellow-600 text-white py-4 rounded font-bold shadow-lg mt-4">ЗАКАЗАТЬ ПЕРЕВОД</button>
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-white pt-24 px-6 hidden lg:hidden overflow-y-auto">
+        <nav class="flex flex-col space-y-4">
+            <a href="#services" class="mobile-link text-2xl font-forum py-2 border-b">Услуги</a>
+            <a href="#prices" class="mobile-link text-2xl font-forum py-2 border-b">Стоимость</a>
+            <a href="#languages" class="mobile-link text-2xl font-forum py-2 border-b">Языки</a>
+            <a href="#reviews" class="mobile-link text-2xl font-forum py-2 border-b">Отзывы</a>
+            <a href="#contacts" class="mobile-link text-2xl font-forum py-2 border-b">Контакты</a>
+            <div class="pt-8">
+                <a href="tel:+79255857479" class="flex items-center text-yellow-700 font-bold mb-4">
+                    <i data-lucide="phone" class="mr-3"></i> +7 (925) 585-74-79
+                </a>
+                <button class="w-full bg-yellow-600 text-white py-4 rounded-xl font-bold shadow-xl">ОТПРАВИТЬ ФАЙЛ НА РАСЧЕТ</button>
+            </div>
         </nav>
     </div>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[500px] flex items-center overflow-hidden bg-[#121212]">
+    <section class="relative min-h-[70vh] flex items-center bg-[#0a0a0a] overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&q=80&w=1920" alt="Translation" class="w-full h-full object-cover opacity-40">
-            <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+            <img src="https://images.unsplash.com/photo-1521791136064-7986c2959d93?auto=format&fit=crop&q=80&w=1920" alt="Consultation" class="w-full h-full object-cover opacity-30">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/60"></div>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Счастье — это когда тебя <span class="text-yellow-500">понимают...</span></h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-10 font-forum max-w-2xl">Мы сделаем так, чтобы Вас поняли правильно! Профессиональное лингвистическое сопровождение с 2005 года.</p>
-            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
-                <button class="bg-yellow-600 hover:bg-yellow-700 text-white px-8 py-4 rounded font-bold transition shadow-xl uppercase text-sm">Начать проект</button>
-                <button class="border border-white/50 hover:bg-white/10 text-white px-8 py-4 rounded font-bold transition text-sm">Наши цены</button>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 py-20 w-full text-white text-center">
+            <div class="inline-block bg-yellow-600/20 backdrop-blur-md border border-yellow-600/50 px-4 py-1 rounded-full text-yellow-400 text-xs font-bold uppercase tracking-[0.3em] mb-8">
+                Старейшее бюро переводов Москвы
+            </div>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 leading-none tracking-tight">
+                Вас поймут <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-700">правильно!</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-12 font-forum max-w-3xl mx-auto leading-relaxed">
+                Профессиональный перевод документов любой сложности с бессрочной гарантией качества. Работаем с 2005 года.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#contacts" class="w-full sm:w-auto bg-yellow-600 hover:bg-yellow-700 text-white px-10 py-5 rounded-full font-bold transition-all transform hover:scale-105 shadow-2xl uppercase tracking-widest text-sm">Рассчитать стоимость</a>
+                <a href="#services" class="w-full sm:w-auto border border-white/30 hover:border-white text-white px-10 py-5 rounded-full font-bold transition text-sm uppercase tracking-widest">Наши услуги</a>
             </div>
         </div>
     </section>
 
-    <!-- Advantages Grid -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="advantages-grid">
-            <!-- Dynamic Content via JS -->
-        </div>
-    </section>
-
-    <!-- Intro Text -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-8">Бюро переводов «Золотой гриф»</h2>
-            <div class="space-y-6 text-gray-600 text-lg leading-relaxed font-forum">
-                <p>Наша компания – одно из старейших бюро переводов в Москве. Мы оказываем комплексные услуги по профессиональному переводу любых документов и текстов. Все наши переводчики имеют высшее образование и многолетний опыт.</p>
-                <p>Мы гарантируем индивидуальный подход, лингвистическое сопровождение и разумные цены. Гарантия качества обеспечивается отлаженной многоступенчатой системой контроля.</p>
+    <!-- Key Stats -->
+    <div class="bg-white border-b py-10">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="text-center">
+                <p class="text-4xl font-bold text-gray-900 mb-1">18+</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Лет на рынке</p>
+            </div>
+            <div class="text-center border-l border-gray-100">
+                <p class="text-4xl font-bold text-gray-900 mb-1">50+</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Языков мира</p>
+            </div>
+            <div class="text-center border-l border-gray-100">
+                <p class="text-4xl font-bold text-gray-900 mb-1">100к+</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Переведенных страниц</p>
+            </div>
+            <div class="text-center border-l border-gray-100">
+                <p class="text-4xl font-bold text-gray-900 mb-1">∞</p>
+                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Гарантия качества</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 bg-white">
+    <!-- Detailed Services -->
+    <section id="services" class="py-24 bg-gray-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Наши Услуги</h2>
-                <div class="h-1 w-20 bg-yellow-600 mx-auto"></div>
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                <div class="max-w-2xl">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Профессиональные решения</h2>
+                    <p class="text-gray-600 text-lg">Мы специализируемся на сложных тематиках, где важна каждая деталь и точность формулировок.</p>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <span class="text-yellow-600 font-bold border-b-2 border-yellow-600">Все услуги бюро</span>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="services-grid">
-                <!-- Dynamic Content via JS -->
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="detailed-services-grid">
+                <!-- Content via JS -->
             </div>
         </div>
     </section>
 
-    <!-- Languages Grid -->
-    <section id="languages" class="py-20 bg-gray-50">
+    <!-- Prices Section -->
+    <section id="prices" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Языки перевода</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4" id="languages-grid">
-                <!-- Dynamic Content via JS -->
+            <h2 class="text-4xl font-bold text-center mb-16 font-playfair tracking-tight">Ориентировочная стоимость</h2>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-900 text-white uppercase text-xs tracking-[0.2em]">
+                            <th class="p-6">Направление / Вид услуги</th>
+                            <th class="p-6">Единица измерения</th>
+                            <th class="p-6">Цена от</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100" id="prices-table-body">
+                        <!-- Content via JS -->
+                    </tbody>
+                </table>
+            </div>
+            <p class="mt-8 text-sm text-gray-500 italic text-center">* Конечная стоимость зависит от сложности текста, объема и срочности выполнения заказа.</p>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="py-24 bg-[#fafafa]">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-16">Как мы работаем</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-yellow-200 z-0"></div>
+                
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-bold">1</div>
+                    <h3 class="font-bold text-lg mb-2">Заявка</h3>
+                    <p class="text-sm text-gray-500">Присылаете документ на почту или через форму на сайте</p>
+                </div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-bold">2</div>
+                    <h3 class="font-bold text-lg mb-2">Оценка</h3>
+                    <p class="text-sm text-gray-500">В течение 15 минут оцениваем стоимость и сроки</p>
+                </div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-bold">3</div>
+                    <h3 class="font-bold text-lg mb-2">Перевод</h3>
+                    <p class="text-sm text-gray-500">Профильный специалист выполняет работу</p>
+                </div>
+                <div class="relative z-10 text-center">
+                    <div class="w-20 h-20 bg-yellow-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-bold">4</div>
+                    <h3 class="font-bold text-lg mb-2">Контроль</h3>
+                    <p class="text-sm text-gray-500">Редактор проверяет текст. Выдача или доставка заказа</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section id="reviews" class="py-20 bg-white">
+    <!-- Languages Section -->
+    <section id="languages" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">Отзывы клиентов</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="reviews-grid">
-                <!-- Dynamic Content via JS -->
+            <h2 class="text-3xl font-bold text-center mb-16">Языки, с которыми мы работаем</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4" id="languages-grid">
+                <!-- Content via JS -->
             </div>
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section id="contacts" class="py-20 bg-gray-900">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex flex-col lg:flex-row rounded-3xl overflow-hidden shadow-2xl bg-[#1a1a1a]">
-                <div class="lg:w-1/2 p-10 lg:p-16 bg-yellow-600 text-white">
-                    <h2 class="text-4xl font-bold mb-8 font-playfair">Готовы начать?</h2>
-                    <p class="text-xl mb-12 font-forum">Оставьте заявку на расчет стоимости. Мы ответим вам в течение 15 минут.</p>
-                    <div class="space-y-6">
-                        <div class="flex items-center">
-                            <i data-lucide="mail" class="mr-4"></i> info@zgrif.ru
+    <!-- FAQ Section -->
+    <section class="py-24 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-16">Часто задаваемые вопросы</h2>
+            <div class="space-y-4" id="faq-container">
+                <!-- Content via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contacts" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-16">
+            <div class="lg:w-1/2">
+                <h2 class="text-4xl font-bold mb-8">Наши Контакты</h2>
+                <div class="space-y-8">
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-4 rounded-xl text-yellow-700 mr-6">
+                            <i data-lucide="map-pin"></i>
                         </div>
-                        <div class="flex items-center">
-                            <i data-lucide="phone" class="mr-4"></i> +7 (925) 585-74-79
+                        <div>
+                            <p class="font-bold text-lg">Офис в Москве</p>
+                            <p class="text-gray-600">Головинское ш., д. 1, БЦ «Охотник», 3-й этаж, офис 315</p>
+                            <p class="text-sm text-yellow-700 font-bold mt-2">м. Водный стадион (1 мин. пешком)</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-4 rounded-xl text-yellow-700 mr-6">
+                            <i data-lucide="phone"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg">Телефоны</p>
+                            <p class="text-gray-600">+7 (925) 585-74-79</p>
+                            <p class="text-gray-600">+7 (495) 585-74-79</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="bg-yellow-100 p-4 rounded-xl text-yellow-700 mr-6">
+                            <i data-lucide="mail"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg">Электронная почта</p>
+                            <p class="text-gray-600">info@zgrif.ru</p>
+                            <p class="text-gray-600">order@zgrif.ru</p>
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2 p-10 lg:p-16 text-gray-300">
-                    <form id="order-form" class="space-y-6">
-                        <input type="text" placeholder="Ваше имя" class="w-full bg-white/5 border border-white/10 rounded p-4 focus:border-yellow-600 outline-none transition">
-                        <input type="tel" placeholder="Телефон" class="w-full bg-white/5 border border-white/10 rounded p-4 focus:border-yellow-600 outline-none transition">
-                        <textarea placeholder="Что нужно перевести?" class="w-full bg-white/5 border border-white/10 rounded p-4 h-32 focus:border-yellow-600 outline-none transition"></textarea>
-                        <button type="submit" class="w-full bg-white text-gray-900 py-4 rounded font-bold hover:bg-yellow-600 hover:text-white transition uppercase tracking-widest">Отправить</button>
-                    </form>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="bg-gray-100 rounded-3xl h-full min-h-[400px] flex items-center justify-center border-4 border-white shadow-2xl relative overflow-hidden">
+                    <!-- Placeholder for Map -->
+                    <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?um=constructor%3A6f12c7d25f5690ad41496fcfdbf8d1&width=600&height=400&lang=ru_RU" alt="Map Location" class="w-full h-full object-cover">
+                    <div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-4 rounded-2xl shadow-xl">
+                        <p class="text-sm font-bold">Бизнес-центр «Охотник»</p>
+                        <p class="text-xs text-gray-500">Вход через главный вестибюль, 3-й этаж.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-[#111] text-gray-500 py-12 border-t border-white/5">
-        <div class="max-w-7xl mx-auto px-4 text-center">
-            <p class="text-white font-bold mb-4">ЗОЛОТОЙ ГРИФ</p>
-            <p class="text-sm">© 2007–2025 Бюро переводов «Золотой Гриф». Все права защищены.</p>
+    <footer class="bg-[#111] text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="bg-yellow-600 p-2 rounded-lg">
+                            <i data-lucide="feather" class="text-white w-6 h-6"></i>
+                        </div>
+                        <span class="text-2xl font-bold">ЗОЛОТОЙ ГРИФ</span>
+                    </div>
+                    <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">
+                        Старейшее бюро переводов Москвы с безупречной репутацией. Мы гарантируем точность каждой буквы и соблюдение самых строгих дедлайнов.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-600 transition"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-600 transition"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+                        <a href="#" class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-yellow-600 transition"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-yellow-600">Основные услуги</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Нотариальный перевод</a></li>
+                        <li><a href="#" class="hover:text-white transition">Технический перевод</a></li>
+                        <li><a href="#" class="hover:text-white transition">Медицинский перевод</a></li>
+                        <li><a href="#" class="hover:text-white transition">Апостиль и Легализация</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-sm uppercase tracking-widest text-yellow-600">О компании</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Наши вакансии</a></li>
+                        <li><a href="#" class="hover:text-white transition">Отзывы клиентов</a></li>
+                        <li><a href="#" class="hover:text-white transition">Полезные статьи</a></li>
+                        <li><a href="#" class="hover:text-white transition">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-white/5 text-center text-xs text-gray-600">
+                <p>© 2005–2025 Бюро переводов «Золотой Гриф». Зарегистрированный товарный знак.</p>
+            </div>
         </div>
     </footer>
 

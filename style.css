@@ -1,9 +1,10 @@
 
 body {
     font-family: 'PT Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, .font-playfair {
+h1, h2, h3, h4, .font-playfair {
     font-family: 'Playfair Display', serif;
 }
 
@@ -11,9 +12,15 @@ h1, h2, h3, .font-playfair {
     font-family: 'Forum', serif;
 }
 
-/* Custom Scrollbar */
+/* Custom Selection */
+::selection {
+    background: #ca8a04;
+    color: white;
+}
+
+/* Scrollbar Style */
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -23,26 +30,40 @@ h1, h2, h3, .font-playfair {
     border-radius: 10px;
 }
 
-/* Header Sticky Shadow */
-#main-header.scrolled {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+/* Fade In Animation for sections */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Section Smooth Fade */
 section {
-    transition: opacity 0.5s ease-in;
+    animation: fadeInUp 0.8s ease-out forwards;
 }
 
-/* Cards Hover */
-.service-card:hover {
-    transform: translateY(-5px);
+/* Glassmorphism utility */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Mobile menu transitions */
-#mobile-menu {
-    transition: all 0.3s ease-in-out;
+/* Service Card Hover */
+.service-card-active:hover {
+    transform: translateY(-8px);
+}
+
+/* Table Hover */
+tr {
+    transition: all 0.2s ease;
+}
+
+/* FAQ transitions */
+.faq-content {
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }

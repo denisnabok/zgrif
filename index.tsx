@@ -1,18 +1,66 @@
 
-// Data Constants
-const ADVANTAGES = [
-    { title: 'Объёмы и сроки', desc: 'Документы любого объёма. Срочные заказы.', icon: 'clock' },
-    { title: 'Все виды услуг', desc: 'Перевод, заверение, верстка, локализация.', icon: 'globe' },
-    { title: 'Качество', desc: 'Стандарты ГОСТ и ISO. Бессрочная гарантия.', icon: 'shield-check' },
-    { title: 'Индивидуальность', desc: 'Персональное сопровождение каждого клиента.', icon: 'user-check' },
-    { title: 'Удобство', desc: 'Офис у метро или дистанционное оформление.', icon: 'smartphone' },
-    { title: 'Анонимность', desc: 'Официальный договор о конфиденциальности.', icon: 'lock' }
+// --- Extended Data for the Bureau ---
+
+const DETAILED_SERVICES = [
+    {
+        id: 'tech',
+        title: 'Технический перевод',
+        desc: 'Перевод инструкций, чертежей (AutoCAD), спецификаций и научных работ. Работаем с инженерами-лингвистами.',
+        icon: 'settings',
+        features: ['Чертежи и схемы', 'IT документация', 'Руководства']
+    },
+    {
+        id: 'legal',
+        title: 'Юридический перевод',
+        desc: 'Контракты, уставы, доверенности и судебные решения. Соблюдаем юридическую терминологию и конфиденциальность.',
+        icon: 'briefcase',
+        features: ['Договоры', 'Учредительные док-ты', 'Судебные иски']
+    },
+    {
+        id: 'medical',
+        title: 'Медицинский перевод',
+        desc: 'Выписки из истории болезни, протоколы исследований, аннотации к препаратам. Переводят врачи.',
+        icon: 'activity',
+        features: ['Диагнозы', 'Фарм-документация', 'Заключения']
+    },
+    {
+        id: 'notary',
+        title: 'Нотариальное заверение',
+        desc: 'Официальное подтверждение подписи переводчика у нотариуса. Полный цикл подготовки документов для посольств.',
+        icon: 'stamp',
+        features: ['Заверение за 1 час', 'Перевод печатей', 'Многостраничные док-ты']
+    },
+    {
+        id: 'apostille',
+        title: 'Апостиль и Легализация',
+        desc: 'Проставление штампа «Апостиль» в Минюсте или консульская легализация для стран, не входящих в Гаагскую конвенцию.',
+        icon: 'globe-2',
+        features: ['Минюст РФ', 'МИД РФ', 'Консульства']
+    },
+    {
+        id: 'personal',
+        title: 'Личные документы',
+        desc: 'Перевод паспортов, свидетельств о рождении, браке, дипломов с последующим заверением. Срочно от 30 минут.',
+        icon: 'user',
+        features: ['Паспорт', 'Диплом', 'Справки']
+    }
 ];
 
-const SERVICES = [
-    { title: 'Письменный перевод', items: ['Личные документы', 'Паспорта', 'Техника', 'Юриспруденция'] },
-    { title: 'Заверение', items: ['Нотариальный перевод', 'Печать бюро', 'Апостиль', 'Легализация'] },
-    { title: 'Доп. услуги', items: ['Верстка текста', 'Локализация сайтов', 'Видео-перевод', 'Доставка'] }
+const PRICES = [
+    { name: 'Английский (перевод страницы)', unit: '1800 знаков', price: 'от 550 ₽' },
+    { name: 'Немецкий, Французский', unit: '1800 знаков', price: 'от 650 ₽' },
+    { name: 'Китайский, Японский', unit: '1800 знаков', price: 'от 1200 ₽' },
+    { name: 'Перевод паспорта (комплект)', unit: '1 документ', price: 'от 1200 ₽' },
+    { name: 'Нотариальное заверение', unit: '1 подпись', price: '700 ₽' },
+    { name: 'Апостиль (гос. пошлина включена)', unit: '1 документ', price: 'от 5500 ₽' },
+    { name: 'Устный перевод (синхрон)', unit: '1 час', price: 'от 3500 ₽' }
+];
+
+const FAQS = [
+    { q: 'Как быстро вы делаете перевод паспорта?', a: 'Стандартный срок — 1 рабочий день. В срочном режиме мы можем подготовить перевод и заверить его нотариально в течение 1–2 часов.' },
+    { q: 'Можно ли прислать фото документа вместо оригинала?', a: 'Да, для предварительного расчета и начала работы достаточно качественного фото или скана. Однако для нотариального заверения к оригиналу или копии часто требуются физические документы.' },
+    { q: 'Работаете ли вы с юридическими лицами?', a: 'Безусловно. Мы работаем по договору, принимаем оплату по безналичному расчету и предоставляем все закрывающие документы для бухгалтерии.' },
+    { q: 'Что такое апостиль и зачем он нужен?', a: 'Апостиль — это международная стандартизированная форма заполнения сведений о законности документа для предъявления на территории других стран. Он нужен, если вы планируете использовать российский документ за границей.' }
 ];
 
 const LANGUAGES = [
@@ -20,73 +68,72 @@ const LANGUAGES = [
     { name: 'Французский', flag: '🇫🇷' }, { name: 'Итальянский', flag: '🇮🇹' },
     { name: 'Испанский', flag: '🇪🇸' }, { name: 'Китайский', flag: '🇨🇳' },
     { name: 'Японский', flag: '🇯🇵' }, { name: 'Арабский', flag: '🇸🇦' },
-    { name: 'Турецкий', flag: '🇹🇷' }, { name: 'Армянский', flag: '🇦🇲' }
+    { name: 'Турецкий', flag: '🇹🇷' }, { name: 'Корейский', flag: '🇰🇷' },
+    { name: 'Финский', flag: '🇫🇮' }, { name: 'Греческий', flag: '🇬🇷' }
 ];
 
-const REVIEWS = [
-    { author: 'Павел П.', text: 'Очень понравилось, качественная работа и приятное общение. Рекомендую!', platform: 'Google' },
-    { author: 'Оксана К.', text: 'Быстро перевели сложный технический текст. Буду обращаться ещё.', platform: 'Yandex' },
-    { author: 'Ринат М.', text: 'Удобное расположение и адекватные цены. Сделали всё за 3 часа.', platform: 'Google' }
-];
+// --- Initialization Logic ---
 
-// Initialize UI
 document.addEventListener('DOMContentLoaded', () => {
-    // Render Advantages
-    const advGrid = document.getElementById('advantages-grid');
-    if (advGrid) {
-        advGrid.innerHTML = ADVANTAGES.map(adv => `
-            <div class="p-8 bg-gray-50 rounded-xl hover:shadow-xl transition-all group">
-                <div class="w-12 h-12 bg-yellow-100 text-yellow-700 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-colors">
-                    <i data-lucide="${adv.icon}"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-2">${adv.title}</h3>
-                <p class="text-gray-600">${adv.desc}</p>
-            </div>
-        `).join('');
-    }
-
-    // Render Services
-    const svcGrid = document.getElementById('services-grid');
+    // 1. Render Detailed Services
+    const svcGrid = document.getElementById('detailed-services-grid');
     if (svcGrid) {
-        svcGrid.innerHTML = SERVICES.map(svc => `
-            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition-all service-card">
-                <h3 class="text-2xl font-bold mb-6 border-b pb-4 border-yellow-600/20">${svc.title}</h3>
-                <ul class="space-y-4">
-                    ${svc.items.map(item => `
-                        <li class="flex items-center text-gray-700">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-yellow-600 mr-3"></i>
-                            ${item}
+        svcGrid.innerHTML = DETAILED_SERVICES.map(svc => `
+            <div class="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl transition-all group">
+                <div class="w-14 h-14 bg-yellow-50 text-yellow-700 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-yellow-600 group-hover:text-white transition-all duration-300">
+                    <i data-lucide="${svc.icon}" class="w-7 h-7"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">${svc.title}</h3>
+                <p class="text-gray-500 mb-8 text-sm leading-relaxed">${svc.desc}</p>
+                <ul class="space-y-3 mb-8">
+                    ${svc.features.map(f => `
+                        <li class="flex items-center text-xs font-bold text-gray-700 uppercase tracking-wider">
+                            <span class="w-1.5 h-1.5 bg-yellow-500 rounded-full mr-3"></span>
+                            ${f}
                         </li>
                     `).join('')}
                 </ul>
+                <button class="flex items-center text-yellow-700 font-bold hover:translate-x-2 transition-transform uppercase text-[10px] tracking-widest">
+                    Подробнее <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                </button>
             </div>
         `).join('');
     }
 
-    // Render Languages
+    // 2. Render Price Table
+    const priceTable = document.getElementById('prices-table-body');
+    if (priceTable) {
+        priceTable.innerHTML = PRICES.map(p => `
+            <tr class="hover:bg-gray-50 transition">
+                <td class="p-6 font-bold text-gray-900">${p.name}</td>
+                <td class="p-6 text-gray-500 text-sm">${p.unit}</td>
+                <td class="p-6 font-bold text-yellow-700">${p.price}</td>
+            </tr>
+        `).join('');
+    }
+
+    // 3. Render Languages
     const langGrid = document.getElementById('languages-grid');
     if (langGrid) {
         langGrid.innerHTML = LANGUAGES.map(lang => `
-            <div class="flex items-center p-4 bg-white rounded-lg hover:shadow-md transition">
+            <div class="flex items-center justify-center p-4 bg-gray-50 rounded-2xl border border-transparent hover:border-yellow-200 hover:bg-white transition-all cursor-default">
                 <span class="text-2xl mr-3">${lang.flag}</span>
-                <span class="font-bold">${lang.name}</span>
+                <span class="font-bold text-gray-700 text-sm">${lang.name}</span>
             </div>
         `).join('');
     }
 
-    // Render Reviews
-    const revGrid = document.getElementById('reviews-grid');
-    if (revGrid) {
-        revGrid.innerHTML = REVIEWS.map(rev => `
-            <div class="bg-gray-50 p-8 rounded-2xl">
-                <div class="flex text-yellow-500 mb-4">
-                    ${'<i data-lucide="star" class="w-4 h-4 fill-current"></i>'.repeat(5)}
-                </div>
-                <p class="italic text-gray-600 mb-6">"${rev.text}"</p>
-                <div class="flex items-center">
-                    <div class="w-8 h-8 bg-yellow-600 text-white rounded-full flex items-center justify-center font-bold mr-3">${rev.author[0]}</div>
-                    <span class="font-bold">${rev.author}</span>
-                    <span class="ml-auto text-xs text-gray-400 uppercase">${rev.platform}</span>
+    // 4. Render FAQ
+    const faqContainer = document.getElementById('faq-container');
+    if (faqContainer) {
+        faqContainer.innerHTML = FAQS.map((faq, i) => `
+            <div class="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+                <button class="w-full p-6 text-left flex justify-between items-center faq-toggle" data-index="${i}">
+                    <span class="font-bold text-gray-800">${faq.q}</span>
+                    <i data-lucide="plus" class="w-5 h-5 text-yellow-600 transition-transform"></i>
+                </button>
+                <div class="max-h-0 overflow-hidden transition-all duration-300 bg-gray-50 faq-content">
+                    <div class="p-6 text-gray-600 leading-relaxed">${faq.a}</div>
                 </div>
             </div>
         `).join('');
@@ -96,44 +143,59 @@ document.addEventListener('DOMContentLoaded', () => {
     // @ts-ignore
     lucide.createIcons();
 
-    // Sticky Header Logic
-    const header = document.getElementById('main-header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header?.classList.add('scrolled');
-        } else {
-            header?.classList.remove('scrolled');
-        }
+    // FAQ Toggle Logic
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+        button.addEventListener('click', () => {
+            const content = button.nextElementSibling as HTMLElement;
+            const icon = button.querySelector('[data-lucide="plus"]') as HTMLElement;
+            
+            const isOpen = content.style.maxHeight !== '0px' && content.style.maxHeight !== '';
+            
+            // Close all
+            document.querySelectorAll('.faq-content').forEach(c => (c as HTMLElement).style.maxHeight = '0px');
+            document.querySelectorAll('.faq-toggle i').forEach(i => (i as HTMLElement).style.transform = 'rotate(0deg)');
+            
+            if (!isOpen) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+            }
+        });
     });
 
-    // Mobile Menu Logic
+    // Mobile Menu Toggle
     const menuToggle = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const iconOpen = document.getElementById('menu-icon-open');
     const iconClose = document.getElementById('menu-icon-close');
 
     menuToggle?.addEventListener('click', () => {
-        const isOpen = mobileMenu?.classList.toggle('hidden');
+        const isHidden = mobileMenu?.classList.toggle('hidden');
         iconOpen?.classList.toggle('hidden');
         iconClose?.classList.toggle('hidden');
-        document.body.classList.toggle('overflow-hidden');
+        document.body.style.overflow = isHidden ? 'auto' : 'hidden';
     });
 
-    // Close menu on link click
-    document.querySelectorAll('.mobile-link').forEach(link => {
-        link.addEventListener('click', () => {
-            mobileMenu?.classList.add('hidden');
-            iconOpen?.classList.remove('hidden');
-            iconClose?.classList.add('hidden');
-            document.body.classList.remove('overflow-hidden');
-        });
+    // Sticky Header Scroll
+    const header = document.getElementById('main-header');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            header?.classList.add('py-2', 'shadow-lg');
+            header?.classList.remove('py-4', 'shadow-sm');
+        } else {
+            header?.classList.add('py-4', 'shadow-sm');
+            header?.classList.remove('py-2', 'shadow-lg');
+        }
     });
 
-    // Form submission
+    // Form Mock Submission
     const form = document.getElementById('order-form');
     form?.addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Спасибо за вашу заявку! Мы свяжемся с вами в ближайшее время.');
-        (form as HTMLFormElement).reset();
+        const btn = form.querySelector('button');
+        if (btn) btn.innerText = 'ОТПРАВЛЕНО ✔';
+        setTimeout(() => {
+            if (btn) btn.innerText = 'ОТПРАВИТЬ';
+            (form as HTMLFormElement).reset();
+        }, 3000);
     });
 });
